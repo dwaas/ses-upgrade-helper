@@ -502,7 +502,7 @@ check_osd_parttypes () {
 
     for osd_dir in ${osd_base_dir}/*
     do
-        out_bold "\nVerifying OSD journal and data paritions for: $osd_dir\n"
+        out_bold "\nVerifying OSD journal and data partitions for: $osd_dir\n"
         if [ ! -d "$osd_dir" ]
         then
             out_warn "$osd_dir is not a directory. Skipping.\n"
@@ -1014,7 +1014,7 @@ upgrade_funcs+=("chown_var_log_ceph")
 upgrade_func_descs+=(
 "Set ownership of /var/log/ceph
 ==============================
-Recursively set the ownerhip of /var/log/ceph to ceph:ceph. All ceph daemons
+Recursively set the ownership of /var/log/ceph to ceph:ceph. All ceph daemons
 in SES3 and beyond will run as user \"ceph\"."
 )
 upgrade_funcs+=("enable_radosgw_services")
